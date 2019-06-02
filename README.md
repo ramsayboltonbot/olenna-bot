@@ -22,6 +22,6 @@ NOTES:
 
    - Your bot will only run so long as you have the application running. Should be obvious, but I thought I would point that out.
 
-   - I set up the bot to print out every time it receives a comment & replies to a comment. If you find this annoying, you can nix them in the code; they're not necessary for the program to run.
+   - I set up the bot to print out every time it receives a comment. If you find this annoying, you can nix the console.log() in the code; it's not necessary for the program to run.
 
    - If you have any further questions, feel free to message me @ reddit.com/user/olenna-bot
