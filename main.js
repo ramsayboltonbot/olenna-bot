@@ -12,7 +12,7 @@ const myWrapper = new Snoowrap({
     password: 'YOUR INFO GOES HERE',
 });
 
-myWrapper.config({requestDelay: 2000, continueAfterRatelimitError: true})
+myWrapper.config({requestDelay: 1000, continueAfterRatelimitError: true})
 
 const reply_array = ['Well, if it isn\'t the famous tart Queen Cersei.', 'A sword swallower through and through.', 'Tell Cersei. I want her to know it was me.', 
 		     'You look like an angry little boy. Don\'t presume to tell me what I need.', 'War is war, but killing a man at a wedding? Horrid.', 
@@ -26,7 +26,7 @@ const reply_array = ['Well, if it isn\'t the famous tart Queen Cersei.', 'A swor
 		     'Are you here to seduce me?', 'Oh, you can smell the shit from five miles away', 'I would have thought we were perfectly clear the first time. You\'re not welcome.', 'That is hardly your concern', 'Idiots, help your king.', 
 		     'Kiss me, child.', 'Speak freely, child. We would never betray your confidence, I swear it.', 'Ah. That\'s a pity.', 'You love her. You really do love her. You poor fool. She\'ll be the end of you.'];
 
-new CommentStream(myWrapper, {subreddit:'freefolk', pollTime:2000}).on('item', (item) => {
+new CommentStream(myWrapper, {subreddit:'freefolk', pollTime:1000}).on('item', (item) => {
 	var timestamp = new Date().toLocaleString()
 	console.log('Comment received at: ' + timestamp)
      	if (item.body.toLowerCase().includes('olenna') || item.body.toLowerCase().includes('queen of thorns')) { 
