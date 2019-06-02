@@ -14,7 +14,15 @@ const myWrapper = new Snoowrap({
 
 myWrapper.config({requestDelay: 2000, continueAfterRatelimitError: true})
 
-const reply_array = ['Well, if it isn\'t the famous tart Queen Cersei.', 'A sword swallower through and through.', 'Tell Cersei. I want her to know it was me.', 'You look like an angry little boy. Don\'t presume to tell me what I need.', 'War is war, but killing a man at a wedding? Horrid.', 'I\'m leaving this wretched city as fast as I can before that shoeless zealot throws me into one of his cells.', 'Marrying a Targaryen was all the rage back then.', 'Do shut up, dear.', 'Anything from you? No? Good. Let the grown women speak.', 'The lords of Westeros are sheep. Are you a sheep? No. You\'re a dragon. Be a dragon.', 'Put the pen down dear, we both know you\'re not writing anything', 'He really was a cunt, wasn\'t he?', 'Get some rest, dear. You look appalling.',  'I wonder if you\’re the worst person I\’ve ever met.', 'What is your name again? Barbaro?', 'I was told you were drunk, impertinent, and thoroughly debauched.', 'The cheese will be served when I want it served, and I want it served now.', 'I\’ve known a great many clever men. I\’ve outlived them all. You know why? I ignored them.', 'But it\'s a natural thing, two boys having a go at each other beneath the sheets.', 'The world is overflowing with horrible things, but they\'re all a tray of cakes next to death.', 'My grandson is the pride of Highgarden. The most desirable bachelor in all seven kingdoms. Your daughter is...old.'];
+const reply_array = ['Well, if it isn\'t the famous tart Queen Cersei.', 'A sword swallower through and through.', 'Tell Cersei. I want her to know it was me.', 
+		     'You look like an angry little boy. Don\'t presume to tell me what I need.', 'War is war, but killing a man at a wedding? Horrid.', 
+		     'I\'m leaving this wretched city as fast as I can before that shoeless zealot throws me into one of his cells.', 
+		     'Marrying a Targaryen was all the rage back then.', 'Do shut up, dear.', 'Anything from you? No? Good. Let the grown women speak.', 
+		     'The lords of Westeros are sheep. Are you a sheep? No. You\'re a dragon. Be a dragon.', 'Put the pen down dear, we both know you\'re not writing anything', 
+		     'He really was a cunt, wasn\'t he?', 'Get some rest, dear. You look appalling.',  'I wonder if you\’re the worst person I\’ve ever met.', 'What is your name again? Barbaro?', 
+		     'I was told you were drunk, impertinent, and thoroughly debauched.', 'The cheese will be served when I want it served, and I want it served now.', 
+		     'I\’ve known a great many clever men. I\’ve outlived them all. You know why? I ignored them.', 'But it\'s a natural thing, two boys having a go at each other beneath the sheets.', 
+		     'The world is overflowing with horrible things, but they\'re all a tray of cakes next to death.', 'My grandson is the pride of Highgarden. The most desirable bachelor in all seven kingdoms. Your daughter is...old.'];
 
 new CommentStream(myWrapper, {subreddit:'freefolk', pollTime:2000}).on('item', (item) => {
 	var timestamp = new Date().toLocaleString()
