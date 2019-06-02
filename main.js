@@ -32,6 +32,5 @@ new CommentStream(myWrapper, {subreddit:'freefolk', pollTime:1000}).on('item', (
      	if (item.body.toLowerCase().includes('olenna') || item.body.toLowerCase().includes('queen of thorns')) { 
         	var index = Math.floor(Math.random()*reply_array.length)
         	item.reply(reply_array[index])
-		console.log('Reply generated.')
      	}
 })
