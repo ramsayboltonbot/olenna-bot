@@ -22,7 +22,9 @@ const reply_array = ['Well, if it isn\'t the famous tart Queen Cersei.', 'A swor
 		     'He really was a cunt, wasn\'t he?', 'Get some rest, dear. You look appalling.',  'I wonder if you\’re the worst person I\’ve ever met.', 'What is your name again? Barbaro?', 
 		     'I was told you were drunk, impertinent, and thoroughly debauched.', 'The cheese will be served when I want it served, and I want it served now.', 
 		     'I\’ve known a great many clever men. I\’ve outlived them all. You know why? I ignored them.', 'But it\'s a natural thing, two boys having a go at each other beneath the sheets.', 
-		     'The world is overflowing with horrible things, but they\'re all a tray of cakes next to death.', 'My grandson is the pride of Highgarden. The most desirable bachelor in all seven kingdoms. Your daughter is...old.'];
+		     'The world is overflowing with horrible things, but they\'re all a tray of cakes next to death.', 'My grandson is the pride of Highgarden. The most desirable bachelor in all seven kingdoms. Your daughter is...old.', 
+		     'Are you here to seduce me?', 'Oh, you can smell the shit from five miles away', 'I would have thought we were perfectly clear the first time. You\'re not welcome.', 'That is hardly your concern', 'Idiots, help your king.', 
+		     'Kiss me, child.', 'Speak freely, child. We would never betray your confidence, I swear it.', 'Ah. That\'s a pity.', 'You love her. You really do love her. You poor fool. She\'ll be the end of you.'];
 
 new CommentStream(myWrapper, {subreddit:'freefolk', pollTime:2000}).on('item', (item) => {
 	var timestamp = new Date().toLocaleString()
